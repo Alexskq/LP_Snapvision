@@ -1,4 +1,190 @@
-<div>
-  <h1 class="font-bold text-4xl">Pages#home</h1>
-  <p>Find me in app/views/pages/home.html.erb</p>
-</div>
+<!-- Navbar with Logo -->
+<header class="fixed top-0 left-0 right-0 bg-white shadow-sm z-50">
+  <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+    <a href="/" class="flex items-center">
+      <%= image_tag "logo.png", alt: "Snapvision Logo", class: "h-10" %>
+    </a>
+    <nav class="hidden md:flex space-x-6">
+      <a href="#how-it-works" class="text-[#2F2E41] hover:text-[#F4C95D] font-lato font-medium">Comment ça marche</a>
+      <a href="#faq" class="text-[#2F2E41] hover:text-[#F4C95D] font-lato font-medium">FAQ</a>
+      <a href="#contact" class="btn btn-sm bg-[#F4C95D] hover:bg-[#F4C95D]/90 text-[#2F2E41] border-none font-inter">Démarrer</a>
+    </nav>
+    <button class="md:hidden text-[#2F2E41]">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+  </div>
+</header>
+
+<!-- Hero Section -->
+<section class="min-h-screen bg-white flex items-center justify-center px-4 pt-16">
+  <div class="max-w-4xl mx-auto text-center">
+    <div class="flex justify-center mb-8">
+      <%= image_tag "logo.png", alt: "Snapvision Logo", class: "h-24 md:h-32" %>
+    </div>
+    <h1 class="text-4xl md:text-6xl font-bold text-[#2F2E41] mb-6 font-inter ">
+      Un MVP rapide, sur-mesure et à moindre coût pour votre start-up
+    </h1>
+    <p class="text-xl md:text-2xl text-gray-600 mb-8 font-lato">
+      Développé par des devs juniors encadrés, c'est gagnant-gagnant.<br>
+      Un MVP pour votre start-up, une première expérience pour nos développeurs.
+    </p>
+    <div class="flex flex-col md:flex-row gap-4 justify-center">
+      <a href="#" class="btn bg-[#F4C95D] hover:bg-[#F4C95D]/90 text-[#2F2E41] border-none btn-lg font-inter">
+        Je suis une start-up 💼
+      </a>
+      <a href="#" class="btn bg-[#2F2E41] hover:bg-[#2F2E41]/90 text-white border-none btn-lg font-inter">
+        Je suis développeur junior 👨‍💻
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Problem/Solution Section -->
+<section class="py-20 bg-gray-50" id="why">
+  <div class="max-w-4xl mx-auto px-4">
+    <h2 class="text-3xl md:text-4xl font-bold text-center text-[#2F2E41] mb-12 font-inter">
+      💡 Pourquoi Snapvision ?
+    </h2>
+    <div class="prose prose-lg mx-auto">
+      <p class="text-xl text-gray-700 mb-6 font-lato">
+        Lancer une idée, c'est coûteux.<br>
+        Et recruter un développeur expérimenté pour un simple MVP, ce n'est pas toujours possible.
+      </p>
+      <p class="text-xl text-gray-700 font-lato">
+        Snapvision connecte les start-ups early stage à des développeurs juniors encadrés pour créer des MVP simples, efficaces et scalables, à moindre coût.<br>
+        Côté start-up, vous testez votre idée.<br>
+        Côté dev, c'est une première mission pro encadrée.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- How it works Section -->
+<section class="py-20 bg-white" id="how-it-works">
+  <div class="max-w-6xl mx-auto px-4">
+    <h2 class="text-3xl md:text-4xl font-bold text-center text-[#2F2E41] mb-12 font-inter">
+      🔧 Comment ça marche ?
+    </h2>
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="card bg-base-100 shadow-xl border border-[#F4C95D]/20">
+        <div class="card-body">
+          <h3 class="card-title text-xl mb-4 text-[#2F2E41] font-inter">1. Vous décrivez votre projet</h3>
+          <p class="font-lato">via un formulaire ultra simple.</p>
+        </div>
+      </div>
+      <div class="card bg-base-100 shadow-xl border border-[#F4C95D]/20">
+        <div class="card-body">
+          <h3 class="card-title text-xl mb-4 text-[#2F2E41] font-inter">2. On vous matche avec un développeur</h3>
+          <p class="font-lato">junior encadré en fonction de vos besoins.</p>
+        </div>
+      </div>
+      <div class="card bg-base-100 shadow-xl border border-[#F4C95D]/20">
+        <div class="card-body">
+          <h3 class="card-title text-xl mb-4 text-[#2F2E41] font-inter">3. Votre MVP est livré rapidement</h3>
+          <p class="font-lato">avec un accompagnement tout au long du projet.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ Section -->
+<section class="py-20 bg-gray-50" id="faq">
+  <div class="max-w-4xl mx-auto px-4">
+    <h2 class="text-3xl md:text-4xl font-bold text-center text-[#2F2E41] mb-12 font-inter">
+      ❓ Questions fréquentes
+    </h2>
+    <div class="space-y-6">
+      <div class="card bg-base-100 shadow-xl border border-[#F4C95D]/20">
+        <div class="card-body">
+          <h3 class="card-title text-[#2F2E41] font-inter">Pourquoi travailler avec un développeur junior ?</h3>
+          <p class="font-lato">Parce qu'ils sont motivés, accompagnés et suivis techniquement.<br>
+          Et surtout, ça vous permet de tester une idée à moindre coût.</p>
+        </div>
+      </div>
+      <div class="card bg-base-100 shadow-xl border border-[#F4C95D]/20">
+        <div class="card-body">
+          <h3 class="card-title text-[#2F2E41] font-inter">Quel est le coût ?</h3>
+          <p class="font-lato">On travaille à définir une offre simple avec un setup fee fixe + un tarif transparent par projet.</p>
+        </div>
+      </div>
+      <div class="card bg-base-100 shadow-xl border border-[#F4C95D]/20">
+        <div class="card-body">
+          <h3 class="card-title text-[#2F2E41] font-inter">Et la qualité ?</h3>
+          <p class="font-lato">Chaque projet est supervisé par un mentor technique. On ne laisse rien au hasard.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Final CTA Section -->
+<section class="py-20 bg-[#F4C95D]" id="contact">
+  <div class="max-w-4xl mx-auto px-4 text-center">
+    <h2 class="text-3xl md:text-4xl font-bold mb-6 text-[#2F2E41] font-inter">
+      🚀 Prêt à discuter de votre MVP ?
+    </h2>
+    <p class="text-xl mb-8 text-[#2F2E41] font-lato">
+      Répondez à quelques questions, on revient vers vous avec une proposition adaptée.<br>
+      Pas d'engagement, juste une vraie discussion.
+    </p>
+    <a href="#" class="btn btn-lg bg-[#2F2E41] hover:bg-[#2F2E41]/90 text-white border-none font-inter">
+      👉 Je lance mon projet avec Snapvision
+    </a>
+  </div>
+</section>
+
+<!-- Footer with Logo -->
+<footer class="bg-[#2F2E41] text-white py-12">
+  <div class="container mx-auto px-4">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+      <div class="md:col-span-1">
+        <%= image_tag "logo.png", alt: "Snapvision Logo", class: "h-12 mb-4" %>
+        <p class="text-sm text-gray-300 font-lato">
+          Un pont entre startups et développeurs juniors pour créer des MVPs de qualité.
+        </p>
+      </div>
+      
+      <div class="md:col-span-1">
+        <h3 class="text-lg font-bold mb-4 font-inter">Liens rapides</h3>
+        <ul class="space-y-2 font-lato">
+          <li><a href="#" class="hover:text-[#F4C95D]">Accueil</a></li>
+          <li><a href="#" class="hover:text-[#F4C95D]">Comment ça marche</a></li>
+          <li><a href="#" class="hover:text-[#F4C95D]">FAQ</a></li>
+        </ul>
+      </div>
+      
+      <div class="md:col-span-1">
+        <h3 class="text-lg font-bold mb-4 font-inter">Pour les startups</h3>
+        <ul class="space-y-2 font-lato">
+          <li><a href="#" class="hover:text-[#F4C95D]">Soumettre un projet</a></li>
+          <li><a href="#" class="hover:text-[#F4C95D]">Exemples de MVPs</a></li>
+          <li><a href="#" class="hover:text-[#F4C95D]">Témoignages</a></li>
+        </ul>
+      </div>
+      
+      <div class="md:col-span-1">
+        <h3 class="text-lg font-bold mb-4 font-inter">Contact</h3>
+        <ul class="space-y-2 font-lato">
+          <li><a href="mailto:contact@snapvision.fr" class="hover:text-[#F4C95D]">contact@snapvision.fr</a></li>
+          <li><a href="#" class="hover:text-[#F4C95D]">LinkedIn</a></li>
+          <li><a href="#" class="hover:text-[#F4C95D]">Twitter</a></li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="border-t border-gray-700 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
+      <p class="text-sm text-gray-400 font-lato">&copy; <%= Date.today.year %> Snapvision. Tous droits réservés.</p>
+      <div class="flex space-x-4 mt-4 md:mt-0">
+        <a href="#" class="text-gray-400 hover:text-[#F4C95D]">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5"><path d="M22.162 5.656a8.384 8.384 0 0 1-2.402.658A4.196 4.196 0 0 0 21.6 4c-.82.488-1.719.83-2.656 1.015a4.182 4.182 0 0 0-7.126 3.814 11.874 11.874 0 0 1-8.62-4.37 4.168 4.168 0 0 0-.566 2.103c0 1.45.738 2.731 1.86 3.481a4.168 4.168 0 0 1-1.894-.523v.052a4.185 4.185 0 0 0 3.355 4.101 4.21 4.21 0 0 1-1.89.072A4.185 4.185 0 0 0 7.97 16.65a8.394 8.394 0 0 1-6.191 1.732 11.83 11.83 0 0 0 6.41 1.88c7.693 0 11.9-6.373 11.9-11.9 0-.18-.005-.362-.013-.54a8.496 8.496 0 0 0 2.087-2.165z"/></svg>
+        </a>
+        <a href="#" class="text-gray-400 hover:text-[#F4C95D]">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
