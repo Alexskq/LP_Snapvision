@@ -1,0 +1,22 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    devDependencies:
+      daisyui:
+        specifier: ^5.0.23
+        version: 5.0.23
+
+packages:
+
+  daisyui@5.0.23:
+    resolution: {integrity: sha512-SIR8yAneeNxvrpaR5kREG1DrPK8XFyfmyvqyZEUTJ2e6tv4Pp56/w+52Vdv34hmSmtAyDldTCEPWx+GvPyp0Yg==}
+
+snapshots:
+
+  daisyui@5.0.23: {}

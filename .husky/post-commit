@@ -1,0 +1,4 @@
+#!/bin/bash
+
+rubocop || true
+echo "\nRun \033[0;33mrubocop -A\033[0m to auto-correct them."

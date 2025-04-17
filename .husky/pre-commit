@@ -1,0 +1,4 @@
+#!/bin/bash
+
+rubocop -A || true
+git add .

@@ -1,0 +1,6 @@
+echo 'Installing Ruby dependencies...'
+bundle install
+echo 'Installing npm dependencies...'
+npm install
+echo 'Running database migrations...'
+rails db:migrate
