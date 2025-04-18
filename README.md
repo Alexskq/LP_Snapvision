@@ -1,24 +1,13 @@
-# README
+# Snapvision
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Snapvision est une application web construite avec Ruby on Rails qui [description brève du projet].
 
-Things you may want to cover:
+## Stack Technique
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* **Ruby:** 3.3.5
+* **Ruby on Rails:** 8.0.2
+* **Base de données:** PostgreSQL
+* **Front-end:** 
+  * Hotwire (Turbo & Stimulus)
+  * Tailwind CSS v4
+  * DaisyUI
