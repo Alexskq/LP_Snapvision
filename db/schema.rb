@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.0].define(version: 2025_04_19_135249) do
+ActiveRecord::Schema[8.0].define(version: 2025_04_22_105749) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "pg_catalog.plpgsql"
 
@@ -19,6 +19,16 @@ ActiveRecord::Schema[8.0].define(version: 2025_04_19_135249) do
     t.string "lead_type", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "project_name"
+    t.string "pitch"
+    t.string "problem"
+    t.string "mvp_objective"
+    t.string "deadline"
+    t.string "stack"
+    t.string "experience_level"
+    t.string "portfolio"
+    t.string "mission_type"
+    t.string "availability"
     t.index ["email"], name: "index_leads_on_email", unique: true
   end
 

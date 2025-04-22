@@ -16,6 +16,19 @@ class LeadsController < ApplicationController
   private
 
   def lead_params
-    params.require(:lead).permit(:email, :lead_type)
+    params.require(:lead).permit(
+      :email,
+      :lead_type,
+      :project_name,
+      :pitch,
+      :problem,
+      :mvp_objective,
+      :deadline,
+      :stack,
+      :experience_level,
+      :portfolio,
+      :mission_type,
+      :availability
+    )
   end
 end
