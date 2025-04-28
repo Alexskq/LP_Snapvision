@@ -11,7 +11,4 @@ one: {
 }
 # column: value
 #
-two: {
-  name: "Jane Doe",
-  email: "jane@example.com",
-}
+
