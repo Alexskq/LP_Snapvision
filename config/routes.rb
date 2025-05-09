@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   resources :leads, only: [ :create ]
+  get "politique-de-confidentialite", to: "pages#privacy_policy", as: :privacy_policy
 
   namespace :admin do
     resources :leads, only: [ :index ]
