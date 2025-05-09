@@ -23,11 +23,34 @@
 
     <%# Includes all stylesheet files in app/assets/stylesheets %>
     <%= stylesheet_link_tag :app, "data-turbo-track": "reload" %>
+    <%= javascript_include_tag "application", "data-turbo-track": "reload", defer: true %>
+
+    <%# Axeptio Cookie Consent %>
+    <script>
+        window.axeptioSettings = {
+        clientId: "681dc721c3230526ade44162",
+          cookiesVersion: "snapvision-fr-EU",
+          googleConsentMode: {
+            default: {
+              analytics_storage: "denied",
+              ad_storage: "denied",
+              ad_user_data: "denied",
+              ad_personalization: "denied",
+              wait_for_update: 500
+            }
+          }
+        };
+         
+        (function(d, s) {
+          var t = d.getElementsByTagName(s)[0], e = d.createElement(s);
+          e.async = true; e.src = "//static.axept.io/sdk.js";
+          t.parentNode.insertBefore(e, t);
+        })(document, "script");
+    </script>
   </head>
 
   <body class="h-full font-sans">
     <%= yield %>
-    
-
+  
   </body>
 </html>

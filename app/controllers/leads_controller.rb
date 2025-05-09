@@ -1,4 +1,7 @@
-class LeadsController < ApplicationController
+class LeadsController < ActionController::Base
+  protect_from_forgery with: :exception
+  skip_before_action :verify_authenticity_token, only: [ :create ]
+
   def create
     @lead = Lead.new(lead_params)
 
@@ -28,7 +31,8 @@ class LeadsController < ApplicationController
       :experience_level,
       :portfolio,
       :mission_type,
-      :availability
+      :availability,
+      :email_consent
     )
   end
 end

@@ -1,6 +1,7 @@
 class Lead < ApplicationRecord
   validates :email, presence: true, format: { with: URI::MailTo::EMAIL_REGEXP }
   validates :lead_type, presence: true, inclusion: { in: [ "startup", "developer" ] }
+  validates :email_consent, acceptance: true, if: -> { email.present? }
 
   # Valider les champs startup seulement si lead_type est "startup"
   with_options if: -> { lead_type == "startup" } do

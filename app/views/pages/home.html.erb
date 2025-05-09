@@ -51,6 +51,9 @@
         Je suis développeur junior 👨‍💻
       </button>
     </div>
+    <div class="flex flex-col md:flex-row gap-4 justify-center">
+      <p class="text-sm text-gray-600 mt-4 italic">(A ce stade, le but de la plateforme est de tester et prendre la température du marché)</p>
+    </div>
   </div>
 </section>
 
@@ -149,6 +152,25 @@
         wrapper_html: { 
           class: "mb-4" 
         } %>
+      
+      <div class="mb-4">
+        <p class="text-sm text-gray-600 mb-2 font-lato">
+          Votre adresse e-mail sera utilisée uniquement pour vous prévenir de l'évolution de Snapvision.
+          Pour en savoir plus, consultez notre <%= link_to "politique de confidentialité", privacy_policy_path, class: "text-[#F4C95D] hover:underline" %>.
+        </p>
+        <div class="flex items-start">
+          <div class="flex items-center h-5">
+            <%= f.check_box :email_consent, 
+              required: true,
+              class: "w-4 h-4 border border-gray-300 rounded focus:ring-[#F4C95D] focus:ring-2" %>
+          </div>
+          <div class="ml-3 text-sm">
+            <label for="lead_email_consent" class="font-medium text-gray-700 font-lato">
+              J'accepte de recevoir des e-mails de la part de Snapvision
+            </label>
+          </div>
+        </div>
+      </div>
       
       <div class="flex justify-end">
         <%= f.button :submit, "Envoyer", class: "btn bg-[#F4C95D] hover:bg-[#F4C95D]/90 text-[#2F2E41] border-none font-inter" %>
@@ -250,6 +272,25 @@
         wrapper_html: { 
           class: "mb-4" 
         } %>
+      
+      <div class="mb-4">
+        <p class="text-sm text-gray-600 mb-2 font-lato">
+          Votre adresse e-mail sera utilisée uniquement pour vous prévenir des opportunités de missions et vous envoyer des mises à jour importantes.
+          Pour en savoir plus, consultez notre <%= link_to "politique de confidentialité", privacy_policy_path, class: "text-[#F4C95D] hover:underline" %>.
+        </p>
+        <div class="flex items-start">
+          <div class="flex items-center h-5">
+            <%= f.check_box :email_consent, 
+              required: true,
+              class: "w-4 h-4 border border-gray-300 rounded focus:ring-[#F4C95D] focus:ring-2" %>
+          </div>
+          <div class="ml-3 text-sm">
+            <label for="lead_email_consent" class="font-medium text-gray-700 font-lato">
+              J'accepte de recevoir des e-mails de la part de Snapvision
+            </label>
+          </div>
+        </div>
+      </div>
       
       <div class="flex justify-end">
         <%= f.button :submit, "Envoyer", class: "btn bg-[#2F2E41] hover:bg-[#2F2E41]/90 text-white border-none font-inter" %>
